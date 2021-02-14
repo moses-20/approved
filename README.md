@@ -17,7 +17,7 @@ The aim of this project is to help you understand basic coding practices. By the
 #### 1. Download and install VS Code
 - Download VS Code for your system [here](https://code.visualstudio.com/download)
 - When installing, make sure you check the boxes like in the image below ![VS Code Checks](/images/vs%20code.png)
-- After installation, open VS Code and click the *Extensions* icon from the leftside menu (or CTRL + SHIFT + X). Search and install
+- After installation, open VS Code and click the *Extensions* icon from the leftside menu (or do CTRL + SHIFT + X). Search and install
   - Live Server
   - Prettier - Code formatter
   - ESLint
@@ -39,4 +39,4 @@ Go [here](https://github.com/) and click the `Sign Up` button to create your Git
 
 ## Next Steps
 Scroll to the top and click **master**. Select **lesson-1** to continue.
-![](images/master.png)
+![continuation](images/master.png)
