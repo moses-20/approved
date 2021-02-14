@@ -38,5 +38,4 @@ Go [here](https://github.com/) and click the `Sign Up` button to create your Git
 <hr style="background-color: #BDC930;"/>
 
 ## Next Steps
-Scroll to the top and click **master**. Select **lesson-1** to continue.
-![continuation](images/master.png)
+Scroll to the top and click **master**. Select **lesson-1** to continue. <br /> ![continuation](images/master.png)
