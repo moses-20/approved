@@ -1,11 +1,9 @@
 # APPROVAL1 Project
-<hr style="background-color: #BDC930;"/>
 
 ## Introduction
 By following instructions on this repo, you will build the navigation and banner section of the page.
 
 ![approval home](/img/src/home.png "approval home")
-<hr style="background-color: #BDC930;"/>
 
 ## Getting Started
 Ensure you have the following done
@@ -228,7 +226,6 @@ git add .
 git commit -m "lesson-1: created about section"
 ```
 ---
-<hr style="background-color: #BDC930;"/>
 
 ## Observations
 Write out the observations you made.
