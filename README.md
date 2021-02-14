@@ -23,6 +23,9 @@ git clone https://github.com/armaebii/approval .
 - creating about section
 
 
+### ⚠️ It is advised that you type the code yourself. By so doing, you will undrstand the code better. ⚠️
+---
+
 #### **Building the navigation**
 1. **index.html**: Between the `body` tags, replace the `h1` element with the folllowing code:
 ```
@@ -168,7 +171,7 @@ git commit -m "lesson-1: added banner section"
 ---
 
 #### **Creating about section**
-1. **index.html**
+1. **index.html**: add the following after the closing </header> tag
 ```
 <!-- main content -->
 <main>
