@@ -16,7 +16,7 @@ You must have completed Lesson 1 before continuing.
 ---
 
 #### **Building inventory section**
-1. **index.html**: type the code below after the ending </div> tag begore </main>
+1. **index.html**: type the code below after the ending `</div>` tag before `</main>`
 ```
 <!-- inventory section -->
 <section id="inventory" class="py-2">
@@ -157,7 +157,7 @@ git commit -m "lesson-2: added inventory section"
 ---
 
 #### **Creating contact section**
-1. **index.html**: add the following after the closing `</header>` tag
+1. **index.html**: add the following after the closing `</section>` tag before `</main>`
 ```
 <!-- contact section -->
 <section id="contact">
