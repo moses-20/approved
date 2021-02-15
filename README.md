@@ -3,7 +3,7 @@
 ## Introduction
 By following instructions on this repo, you will build the navigation and banner section of the page.
 
-![approval home](/img/src/home.png "approval home")
+![approval home](/img/home.png "approval home")
 
 ## Getting Started
 Ensure you have the following done
@@ -13,7 +13,7 @@ Ensure you have the following done
 
 I have created a starter template for you, copy and paste the code below in the terminal of your VS Code to get it.
 ```
-git clone https://github.com/armaebii/approval .
+git clone -b approved --single-branch https://github.com/armaebii/approved.git .
 ```
 
 
@@ -235,4 +235,4 @@ Write out the observations you made.
 
 
 ## Next Steps
-Scroll to the top and click **master**. Select **lesson-2** to continue. <br /> ![continuation](img/src/master.png)
+Scroll to the top and click **master**. Select **lesson-2** to continue. <br /> ![continuation](img/master.png)
