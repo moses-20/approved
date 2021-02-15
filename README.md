@@ -19,79 +19,79 @@ You must have completed Lesson 1 before continuing.
 1. **index.html**: type the code below after the ending </div> tag begore </main>
 ```
 <!-- inventory section -->
-  <section id="inventory" class="py-2">
-    <div class="container inventory-inner">
-      <div class="centered py-3">
-        <h1 class="title-dark">Our inventory</h1>
+<section id="inventory" class="py-2">
+  <div class="container inventory-inner">
+    <div class="centered py-3">
+      <h1 class="title-dark">Our inventory</h1>
+    </div>
+
+    <p class="lead centered">
+      We offer huge variety of vehicles which you can enjoy
+    </p>
+
+    <div class="col-4 py-3">
+      <div class="box">
+        <div class="vehicle">
+          <img src="img/svg/car.svg" alt="" />
+        </div>
+        <div class="description">
+          <h1>Cars</h1>
+          <p class="lead">
+            From fuel efficient commuters to high powered sports cars and
+            luxury sedans, we can help you find the perfect car for your
+            situation.
+          </p>
+          <a href="#" class="btn-apply-dark">Apply now</a>
+        </div>
       </div>
 
-      <p class="lead centered">
-        We offer huge variety of vehicles which you can enjoy
-      </p>
-
-      <div class="col-4 py-3">
-        <div class="box">
-          <div class="vehicle">
-            <img src="img/car.svg" alt="" />
-          </div>
-          <div class="description">
-            <h1>Cars</h1>
-            <p class="lead">
-              From fuel efficient commuters to high powered sports cars and
-              luxury sedans, we can help you find the perfect car for your
-              situation.
-            </p>
-            <a href="apply.html" class="btn-apply-dark">Apply now</a>
-          </div>
+      <div class="box">
+        <div class="vehicle">
+          <img src="img/svg/minivan.svg" alt="" />
         </div>
-
-        <div class="box">
-          <div class="vehicle">
-            <img src="img/minivan.svg" alt="" />
-          </div>
-          <div class="description">
-            <h1>Minivans</h1>
-            <p class="lead">
-              With seating for up to 7 and plenty of room for whatever you
-              may need to transport, a minivan makes the perfect family
-              vehicle.
-            </p>
-            <a href="apply.html" class="btn-apply-dark">Apply now</a>
-          </div>
+        <div class="description">
+          <h1>Minivans</h1>
+          <p class="lead">
+            With seating for up to 7 and plenty of room for whatever you
+            may need to transport, a minivan makes the perfect family
+            vehicle.
+          </p>
+          <a href="#" class="btn-apply-dark">Apply now</a>
         </div>
+      </div>
 
-        <div class="box">
-          <div class="vehicle">
-            <img src="img/truck.svg" alt="" />
-          </div>
-          <div class="description">
-            <h1>Trucks</h1>
-            <p class="lead">
-              Need to haul a trailer, just like helping your friends move?
-              Our dealers carry a wide variety of midsize and full-size
-              trucks from various manufacturers.
-            </p>
-            <a href="apply.html" class="btn-apply-dark">Apply now</a>
-          </div>
+      <div class="box">
+        <div class="vehicle">
+          <img src="img/svg/truck.svg" alt="" />
         </div>
+        <div class="description">
+          <h1>Trucks</h1>
+          <p class="lead">
+            Need to haul a trailer, just like helping your friends move?
+            Our dealers carry a wide variety of midsize and full-size
+            trucks from various manufacturers.
+          </p>
+          <a href="#" class="btn-apply-dark">Apply now</a>
+        </div>
+      </div>
 
-        <div class="box">
-          <div class="vehicle">
-            <img src="img/suv.svg" alt="" />
-          </div>
-          <div class="description">
-            <h1>SUVs</h1>
-            <p class="lead">
-              Looking for something suitable for city driving, but still
-              want that off-road capability? Let us help you get into the
-              perfect SUV. Compact to full-size, we have it!
-            </p>
-            <a href="apply.html" class="btn-apply-dark">Apply now</a>
-          </div>
+      <div class="box">
+        <div class="vehicle">
+          <img src="img/svg/suv.svg" alt="" />
+        </div>
+        <div class="description">
+          <h1>SUVs</h1>
+          <p class="lead">
+            Looking for something suitable for city driving, but still
+            want that off-road capability? Let us help you get into the
+            perfect SUV. Compact to full-size, we have it!
+          </p>
+          <a href="#" class="btn-apply-dark">Apply now</a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 ```
 
 2. **css/main.css**: add the following code
@@ -157,7 +157,7 @@ git commit -m "lesson-2: added inventory section"
 ---
 
 #### **Creating contact section**
-1. **index.html**: add the following after the closing `header` tag
+1. **index.html**: add the following after the closing `</header>` tag
 ```
 <!-- contact section -->
 <section id="contact">
@@ -328,7 +328,7 @@ git commit -m "lesson-2: created contact section"
 ---
 
 #### **Adding footer to the page**
-1. **index.html**: add the code after the closing *main* tag
+1. **index.html**: add the code after the closing `</main>` tag
 ```
 <!-- footer -->
 <footer>
