@@ -1,224 +1,147 @@
 # APPROVAL1 Project
 
 ## Introduction
-By following instructions on this repo, you will build the navigation and banner section of the page.
-
-![approval home](/img/home.png "approval home")
+By following instructions below, you will build the inventory, contact and footer sections of the webpage.
 
 ## Getting Started
-Ensure you have the following done
-1. VS Code (with Live Server) installed
-2. Git and Github configured
-3. Set up a project folder ( named **approval**)
-
-I have created a starter template for you, copy and paste the code below in the terminal of your VS Code to get it.
-```
-git clone -b approved --single-branch https://github.com/armaebii/approved.git .
-```
-
+You must have completed Lesson 1 before continuing.
 
 ### Objectives
-- building the navigation
-- adding banner section
-- creating about section
+- building inventory section
+- creating contact section
+- adding footer to the webpage
 
 
-### ⚠️ It is advised that you type the code yourself. By so doing, you will undrstand the code better. ⚠️
+### ⚠️ It is advised that you type the code yourself. By so doing, you will understand better.
 ---
 
-#### **Building the navigation**
-1. **index.html**: Between the `body` tags, replace the `h1` element with the folllowing code:
+#### **Building inventory section**
+1. **index.html**: type the code below after the ending </div> tag begore </main>
 ```
-<!-- navigation -->
-  <nav id="navbar">
-    <div class="container navbar-inner">
-      <!-- logo -->
-      <div class="logo">
-        <a href="#hero">
-          <img src="img/logo.png" alt="APPROVAL1" />
-        </a>
+<!-- inventory section -->
+  <section id="inventory" class="py-2">
+    <div class="container inventory-inner">
+      <div class="centered py-3">
+        <h1 class="title-dark">Our inventory</h1>
       </div>
 
-      <!-- navigation links -->
-      <ul class="links">
-        <li><a href="#about">About us</a></li>
-        <li><a href="#inventory">Inventory</a></li>
-        <li><a href="#contact">Contact us</a></li>
-        <li>
-          <a href="#" class="btn-apply-dark">Apply now</a>
-        </li>
-      </ul>
+      <p class="lead centered">
+        We offer huge variety of vehicles which you can enjoy
+      </p>
 
-      <!-- menu icon -->
-      <div class="hamburger" onclick="showMenu()">
-        <i data-feather="menu"></i>
+      <div class="col-4 py-3">
+        <div class="box">
+          <div class="vehicle">
+            <img src="img/car.svg" alt="" />
+          </div>
+          <div class="description">
+            <h1>Cars</h1>
+            <p class="lead">
+              From fuel efficient commuters to high powered sports cars and
+              luxury sedans, we can help you find the perfect car for your
+              situation.
+            </p>
+            <a href="apply.html" class="btn-apply-dark">Apply now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="vehicle">
+            <img src="img/minivan.svg" alt="" />
+          </div>
+          <div class="description">
+            <h1>Minivans</h1>
+            <p class="lead">
+              With seating for up to 7 and plenty of room for whatever you
+              may need to transport, a minivan makes the perfect family
+              vehicle.
+            </p>
+            <a href="apply.html" class="btn-apply-dark">Apply now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="vehicle">
+            <img src="img/truck.svg" alt="" />
+          </div>
+          <div class="description">
+            <h1>Trucks</h1>
+            <p class="lead">
+              Need to haul a trailer, just like helping your friends move?
+              Our dealers carry a wide variety of midsize and full-size
+              trucks from various manufacturers.
+            </p>
+            <a href="apply.html" class="btn-apply-dark">Apply now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="vehicle">
+            <img src="img/suv.svg" alt="" />
+          </div>
+          <div class="description">
+            <h1>SUVs</h1>
+            <p class="lead">
+              Looking for something suitable for city driving, but still
+              want that off-road capability? Let us help you get into the
+              perfect SUV. Compact to full-size, we have it!
+            </p>
+            <a href="apply.html" class="btn-apply-dark">Apply now</a>
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
+  </section>
 ```
 
 2. **css/main.css**: add the following code
 ```
-/* style rules for navigation */
-.logo {
-  display: flex;
-  align-items: center;
-  width: 175px;
-  height: auto;
-}
+/* style rules for inventory section */
 
-#navbar {
-  height: auto;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background: #effaff;
-  box-shadow: none;
-  transition: box-shadow 0.5s;
-}
-
-#navbar .navbar-inner {
-  display: flex;
-  justify-content: space-between;
-}
-
-#navbar .navbar-inner .hamburger {
-  display: none;
-}
-
-#navbar .navbar-inner .links {
-  display: flex;
-}
-
-#navbar .navbar-inner .links li {
-  padding: 1.5rem 1.5rem;
-}
-
-#navbar .navbar-inner .links li:last-child {
-  padding: 0.75rem 1.5rem;
-}
-
-#navbar .navbar-inner .links li a {
-  font-weight: 800;
-  text-decoration: none;
-  color: #1f333b;
-  text-transform: uppercase;
-}
-```
-
-3. **terminal**: run the following one after the other
-```
-git status
-git add .
-git commit -m "lesson-1: built navigation bar"
-```
----
-
-#### **Adding banner section**
-1. **index.html**: add the following after the `</nav>` closing tag
-```
-<!-- banner -->
-<header id="hero">
-  <div class="container hero-inner">
-    <!-- leading text -->
-    <div class="heading animated fadeIn">
-      <h1>Start driving your credit.</h1>
-      <p class="lead py-1">
-        No Appointments, no obligation and free to apply. Are you looking
-        for a new car?
-      </p>
-      <a href="#" class="btn-apply-light">Get a car now</a>
-    </div>
-
-    <!-- banner image -->
-    <div class="car animated fadeIn">
-      <img src="img/svg/hero-car.svg" alt="car" />
-    </div>
-  </div>
-</header>
-```
-
-2. **css/main.css**
-```
-/* style rules for banner section */
-#hero {
-  position: relative;
-  background: #24527e;
-  color: #effaff;
-  height: 80vh;
-  z-index: 1;
-}
-
-#hero::before {
-  transform-origin: right bottom;
-  box-shadow: 0 8px 6px -2px rgba(0, 0, 0, 0.25);
-}
-
-#hero .hero-inner {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  height: inherit;
-  align-items: center;
-}
-```
-
-3. **terminal**: run the following one after the other
-```
-git status
-git add .
-git commit -m "lesson-1: added banner section"
-```
----
-
-#### **Creating about section**
-1. **index.html**: add the following after the closing </header> tag
-```
-<!-- main content -->
-<main>
-  <!-- about section -->
-  <section id="about" class="py-2">
-    <div class="container about-inner">
-      <div class="centered py-3">
-        <h1 class="title-dark">About us</h1>
-      </div>
-
-      <div class="about-grid">
-        <p class="about-left lead">
-          Founded in 2019 by Micheal, Approval1 has come a long way from its
-          beginnings in California. When our team first started out, their
-          passion for cars drove them to quit day job so that Approval1 can
-          offer you the world's most best service. We now serve customers
-          all over country, and are thrilled that we're able to turn our
-          passion into our own website.
-        </p>
-        <img src="img/svg/about.svg" alt="About us" class="py-1" />
-      </div>
-    </div>
-  </section>
-
-  <!-- division line -->
-  <div id="hr">
-    <hr class="container" />
-  </div>
-</main>
-```
-
-2. **css/main.css**
-```
-/* style rules for about section */
-#about {
-  z-index: -1;
+#inventory {
   background: #f3eff5;
   color: #1f333b;
   height: auto;
+  padding-bottom: 8rem;
 }
-#about .about-inner .about-grid {
+
+#inventory .inventory-inner .col-4 {
   display: grid;
-  align-items: center;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
 }
-#about .about-inner .about-grid .about-left {
-  padding-right: 2rem;
+
+#inventory .inventory-inner .col-4 .box {
+  color: #1f333b;
+  background: #effaff;
+  box-shadow: 0 2px 7px 2px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 25vw;
+}
+
+#inventory .inventory-inner .col-4 .box:hover {
+  transform: scale(1.03);
+}
+
+#inventory .inventory-inner .col-4 .box .vehicle {
+  background: #24527e;
+  border-radius: 10px 10px 0 0;
+  padding: 1rem;
+}
+
+#inventory .inventory-inner .col-4 .box .vehicle img {
+  max-width: 100px;
+  height: auto;
+}
+
+#inventory .inventory-inner .col-4 .box .description {
+  display: grid;
+  grid-template-rows: fit-content(4rem) 11rem 1fr;
+  row-gap: 1rem;
+  justify-items: center;
+  padding: 1rem;
 }
 ```
 
@@ -226,13 +149,225 @@ git commit -m "lesson-1: added banner section"
 ```
 git status
 git add .
-git commit -m "lesson-1: created about section"
+git commit -m "lesson-2: added inventory section"
 ```
+4. Your webpage should look like the image below
+
+![inventory](img/inventory.png)
 ---
+
+#### **Creating contact section**
+1. **index.html**: add the following after the closing `header` tag
+```
+<!-- contact section -->
+<section id="contact">
+  <div class="container contact-inner">
+    <div class="centered py-2">
+      <h1 class="title-light">Contact us</h1>
+    </div>
+
+    <p class="lead centered">
+      Got any questions? Just want to say hello? Feel free to contact us!
+    </p>
+
+    <div class="col-2">
+      <div class="col-left">
+        <form method="POST" class="py-2">
+          <div class="contact-email">
+            <label for="email">Email</label>
+            <input
+              required
+              type="email"
+              name="email"
+              id="email"
+              class="email-input"
+              placeholder="Enter your email"
+            />
+          </div>
+
+          <div class="contact-name">
+            <label for="name">Name</label>
+            <input
+              required
+              type="text"
+              name="name"
+              id="name"
+              class="name-input"
+              placeholder="Enter your name"
+            />
+          </div>
+
+          <div class="contact-text">
+            <label for="message">Message</label>
+            <textarea
+              required
+              name="message"
+              id="message"
+              class="message-input"
+              placeholder="Enter a message"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn-apply-light">
+            Send a message
+          </button>
+        </form>
+      </div>
+
+      <div class="col-right py-2">
+        <h2>Our informations</h2>
+        <p>You can also reach out using:</p>
+
+        <ul class="contact-data py-1">
+          <li>
+            <p>
+              <i data-feather="phone"></i>
+              <span>
+                <strong>323-776-2888</strong>
+              </span>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <i data-feather="mail"></i>
+              <span>
+                <strong>hello@approval1.com</strong>
+              </span>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <i data-feather="map-pin"></i>
+              <span>
+                <strong
+                  >4341 Kennedy Court, Westlake Village, CA, 91361</strong
+                >
+              </span>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+```
+
+2. **css/main.css**
+```
+/* style rules for contact section */
+#contact {
+  background: #24527e;
+  color: #effaff;
+  height: 70vh;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#hero::before,
+#contact::before {
+  z-index: -1;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  transform: skewY(-3deg);
+}
+
+#contact::before {
+  box-shadow: 0 -8px 6px -2px rgba(0, 0, 0, 0.25);
+  transform-origin: top left;
+}
+
+#contact .contact-inner .col-2 .col-left form .contact-email .email-input,
+#contact .contact-inner .col-2 .col-left form .contact-name .name-input,
+#contact .contact-inner .col-2 .col-left form .contact-text .message-input {
+  border-radius: 3px;
+  box-shadow: 0 2px 7px 2px rgba(0, 0, 0, 0.1);
+  padding: 1rem 1rem;
+  font-size: inherit;
+  font-family: inherit;
+  width: 100%;
+  transition: 0.5s;
+  outline: none;
+}
+
+#contact .contact-inner .col-2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 1rem;
+}
+
+#contact .contact-inner .col-2 .col-left form {
+  display: grid;
+  grid-template-areas:
+    "email name"
+    "message message";
+  grid-gap: inherit;
+}
+
+#contact .contact-inner .col-2 .col-left form .contact-email {
+  grid-area: email;
+}
+```
+
+3. **terminal**: run the following one after the other
+```
+git status
+git add .
+git commit -m "lesson-2: created contact section"
+```
+4. Compare your output with the image below
+
+![contact](/img/contact.png)
+---
+
+#### **Adding footer to the page**
+1. **index.html**: add the code after the closing *main* tag
+```
+<!-- footer -->
+<footer>
+  <div class="container footer-inner">
+    <div class="credits">
+      <h3>&copy; 2021</h3>
+    </div>
+    <div class="logo">
+      <a href="#hero" aria-label="Get back to the top of the page">
+        <img src="img/logo.png" alt="APPROVAL1" />
+      </a>
+    </div>
+  </div>
+</footer>
+```
+
+2. **css/main.css**:
+```
+footer {
+  height: auto;
+  background: #effaff;
+}
+footer .footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+```
+
+3. **terminal**: run the following one after the other
+```
+git status
+git add .
+git commit -m "lesson-2: added footer to page"
+```
 
 ## Observations
 Write out the observations you made.
 
 
 ## Next Steps
-Scroll to the top and click **master**. Select **lesson-2** to continue. <br /> ![continuation](img/master.png)
+Scroll to the top and click **master**. Select **lesson-3** to continue. <br /> ![continuation](img/master.png)
