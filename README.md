@@ -1,33 +1,39 @@
 # APPROVAL1 Project
 
 ## Introduction
+
 By following instructions on this branch, you will build the navigation and banner section of the page.
 
 ![approval home](/img/home.png "approval home")
 
 ## Getting Started
+
 Ensure you have the following done
+
 1. VS Code (with Live Server) installed
 2. Git and Github configured
 3. Set up a project folder ( named **approval**)
 
 I have created a starter template for you, copy and paste the code below in the terminal of your VS Code to get it.
-```
-git clone -b approved --single-branch https://github.com/armaebii/approved.git .
-```
 
+```
+git clone -b approved --single-branch https://github.com/moses-20/approved.git .
+```
 
 ### Objectives
+
 - building the navigation
 - adding banner section
 - creating about section
 
-
 ### ⚠️ It is advised that you type the code yourself. By so doing, you will understand better.
+
 ---
 
 #### **Building the navigation**
+
 1. **index.html**: Between the `body` tags, replace the `h1` element with the following code:
+
 ```
 <!-- navigation -->
   <nav id="navbar">
@@ -58,6 +64,7 @@ git clone -b approved --single-branch https://github.com/armaebii/approved.git .
 ```
 
 2. **css/main.css**: add the following code
+
 ```
 /* style rules for navigation */
 .logo {
@@ -107,15 +114,19 @@ git clone -b approved --single-branch https://github.com/armaebii/approved.git .
 ```
 
 3. **terminal**: run the following one after the other
+
 ```
 git status
 git add .
 git commit -m "lesson-1: built navigation bar"
 ```
+
 ---
 
 #### **Adding banner section**
+
 1. **index.html**: add the following after the `</nav>` closing tag
+
 ```
 <!-- banner -->
 <header id="hero">
@@ -139,6 +150,7 @@ git commit -m "lesson-1: built navigation bar"
 ```
 
 2. **css/main.css**
+
 ```
 /* style rules for banner section */
 #hero {
@@ -163,15 +175,19 @@ git commit -m "lesson-1: built navigation bar"
 ```
 
 3. **terminal**: run the following one after the other
+
 ```
 git status
 git add .
 git commit -m "lesson-1: added banner section"
 ```
+
 ---
 
 #### **Creating about section**
+
 1. **index.html**: add the following after the closing `</header>` tag
+
 ```
 <!-- main content -->
 <main>
@@ -204,6 +220,7 @@ git commit -m "lesson-1: added banner section"
 ```
 
 2. **css/main.css**
+
 ```
 /* style rules for about section */
 #about {
@@ -223,16 +240,19 @@ git commit -m "lesson-1: added banner section"
 ```
 
 3. **terminal**: run the following one after the other
+
 ```
 git status
 git add .
 git commit -m "lesson-1: created about section"
 ```
+
 ---
 
 ## Observations
+
 Write out the observations you made.
 
-
 ## Next Steps
+
 Scroll to the top and click **master**. Select **lesson-2** to continue. <br /> ![continuation](img/master.png)
